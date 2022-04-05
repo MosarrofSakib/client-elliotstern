@@ -68,9 +68,9 @@ adjustment_multiplier = .2
 # IMPORT
 #########################
 df = pd.read_csv(
-    "./uk_results_21.csv")
+    "./csv/uk_results_21.csv")
 df_age_handicap = pd.read_csv(
-    "./handicap and age 2021.csv")
+    "./csv/handicap and age 2021.csv")
 
 #########################
 # CLEAN
