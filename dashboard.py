@@ -674,7 +674,7 @@ def tab1():
     ])
 
 
-app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+app = dash.Dash(__name__, external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 
 
@@ -799,4 +799,4 @@ def create_win_probability_table(players, players2):
 
 
 if __name__ == "__main__":
-    app.run_server(host='0.0.0.0', port=80)
+    app.run_server(debug=True)
